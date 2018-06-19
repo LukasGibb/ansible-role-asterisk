@@ -1,0 +1,7 @@
+---
+
+- name: Install Asterisk requirements
+  apt: name={{item}} state=present
+  with_items:
+  - asterisk
+  tags: asterisk
