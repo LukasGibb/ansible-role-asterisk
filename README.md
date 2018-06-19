@@ -12,7 +12,6 @@ This role will install a tonne of dependancies via apt-get when the asterisk pac
 
 Currently only tested on 
  - Ubuntu 18.04 LTS (Bionic Beaver)
- - Ubuntu 16.04 LTS (Xenial Xerus)
 
 Role Variables
 --------------

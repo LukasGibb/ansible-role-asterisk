@@ -3,7 +3,5 @@
 
 - import_tasks: install.yml
 
-- import_tasks: configure.yml
-
 - name: Ensure Asterisk is started
   service: name=asterisk state=started enabled=yes
