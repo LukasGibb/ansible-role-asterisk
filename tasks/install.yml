@@ -1,7 +1,12 @@
 ---
 
 - name: Install Asterisk requirements
-  apt: name={{item}} state=present
-  with_items:
-  - asterisk
+  apt: 
+    name: "{{ packages }}
+    state: present
+  vars:
+    packages:
+    - asterisk
+  register: my_result
+  until: my_result is succeeded
   tags: asterisk
