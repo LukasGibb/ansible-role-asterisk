@@ -2,7 +2,7 @@
 
 - name: Install Asterisk requirements
   apt: 
-    name: "{{ packages }}
+    name: "{{ packages }}"
     state: present
   vars:
     packages:
