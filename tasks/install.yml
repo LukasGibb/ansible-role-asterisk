@@ -7,6 +7,8 @@
   vars:
     packages:
     - asterisk
+    - asterisk-mp3
+    - libsox-fmt-mp3
   register: my_result
   until: my_result is succeeded
   tags: asterisk
